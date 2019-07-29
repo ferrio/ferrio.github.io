@@ -765,7 +765,8 @@ select {
 }
 
 input,
-textarea {
+textarea,
+select {
 	border: 3px solid #000;
 }
 

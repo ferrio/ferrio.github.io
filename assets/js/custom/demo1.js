@@ -40,6 +40,15 @@
 	closeBttn.addEventListener( 'click', toggleOverlay );
   thanksBttn.addEventListener( 'click', toggleOverlay );
 
+
+  $('#children_field').change(function(o, evt) {
+    if ($(this).val() == 'Yes') {
+      $('#children_section').show();
+    } else {
+      $('#children_section').hide();
+    }
+  });
+
   form = $('form#rsvp_form');
   url = 'https://script.google.com/macros/s/AKfycbxIo_FAMz3aVDzsZT3ZnM3dX7AibkBC2UBEfYL1g1h7igbNuE4/exec';
 

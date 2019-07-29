@@ -178,7 +178,7 @@ lantoniotrento@gmail.com
 							<label>First Name</label>
             </li>
             <li>
-							<input class="span11" type="text" id="first_name" name="first_name" placeholder="Alex" value="woo">
+							<input class="span11" type="text" id="first_name" name="first_name" placeholder="Alex">
             </li>
             <li>
               <label>Last Name</label>
@@ -190,36 +190,57 @@ lantoniotrento@gmail.com
 							<label>Email</label>
 						</li>
 						<li>
-							<input class="span11" type="text" id="email" name="email" placeholder="@doe.com">
+							<input class="span11" type="text" id="email" name="email" placeholder="youremail@host.vom">
 						</li>
             <li>
-              <label># of Adult Guests</label>
+              <label>Number of Adult Guests</label>
             </li>
             <li>
               <input class="span11" type="input" id="adult-guests" name="adult_guests">
             </li>
             <li>
-              <label># of Child Guests</label>
+              <label>Will you be bringing Children?</label>
             </li>
             <li>
-              <input class="span11" type="input" id="child-guests" name="child_guests">
-            </li>
-            <li>
-              <label>Hotel Prefrence</label>
-            </li>
-            <li>
-              <select class="span11" name="hotel_preference">
+              <select class="span11" type="input" name="children" id="children_field">
                 <option value=""></option>
-                <option value="TRS">TRS</option>
-                <option value="TheOther">TheOther</option>
-                <option value="TheLast">TheLast</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
               </select>
             </li>
+            <div style="display: none;" id="children_section">
+              <li>
+                <label>Number of Children Over 12</label>
+              </li>
+              <li>
+                <select class="span11" type="input" name="child_guests_over12">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </li>
+              <li>
+                <label>Number of Children Under 12</label>
+              </li>
+              <li>
+                <select class="span11" type="input" name="child_guests_under12">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </li>
+            </div>
             <li>
               <label>Comments/Considerations</label>
             </li>
             <li>
-              <textarea name="comments">dsfd</textarea>
+              <textarea name="comments" placeholder="I like fun"></textarea>
             </li>
 						<li>
 							<button id="submit_rsvp" class="cbp-mc-submit" type="button">Submit</button>
