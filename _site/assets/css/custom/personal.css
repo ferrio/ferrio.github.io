@@ -1,0 +1,29 @@
+@media only screen and (orientation: landscape) {
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #new-landing{
+    background-image: url(/assets/img/big/engaged.png);
+    padding: 6% 0 0 0;
+  }
+
+
+
+}
+
+@media only screen and (orientation: portrait) {
+
+
+
+      /* Defining each section background and styles on portrait orientation
+      * --------------------------------------- */
+      #new-landing{
+        background-image: url(/assets/img/tablet/engaged.png);
+        padding: 6% 0 0 0;
+      }
+
+
+
+
+
+}

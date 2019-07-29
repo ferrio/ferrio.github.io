@@ -1,0 +1,57 @@
+@media only screen and (orientation: landscape) {
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #section0{
+    background-image: url(/assets/img/big/Wedding1.png);
+    padding: 6% 0 0 0;
+  }
+
+  #section1{
+    background-image: url(/assets/img/big/Wedding3.jpg);
+    padding: 6% 0 0 0;
+  }
+
+  #section2{
+    background-image: url(/assets/img/big/Wedding2.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section4{
+    background-image: url(/assets/img/big/Wedding4.jpg);
+    padding: 6% 0 0 0;
+  }
+
+
+
+}
+
+@media only screen and (orientation: portrait) {
+
+
+
+      /* Defining each section background and styles on portrait orientation
+      * --------------------------------------- */
+      #section0{
+        background-image: url(/assets/img/tablet/Wedding1.png);
+        padding: 6% 0 0 0;
+      }
+
+      #section1{
+        background-image: url(/assets/img/tablet/Wedding3.png);
+        padding: 6% 0 0 0;
+      }
+
+      #section2{
+        background-image: url(/assets/img/tablet/Wedding2.png);
+        padding: 6% 0 0 0;
+      }
+
+      #section4{
+        background-image: url(/assets/img/tablet/Wedding4.png);
+        padding: 6% 0 0 0;
+      }
+
+
+
+
+}

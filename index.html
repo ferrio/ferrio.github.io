@@ -1,0 +1,163 @@
+---
+layout: index
+title: Alex & Erica's Wedding Time Fun
+tagline: Fun in Paradise
+img : 1.jpg
+img-mobile : 1-mobile.jpg
+css: index.css
+js: test.js
+keywords: fullpage, html, css, landing page, jekyll, ruby, web marketing, advertising
+canonical: https://fullit.github.io
+---
+{% include JB/setup %}
+
+
+<div id="fullpage">
+	<div data-anchor="0section" class="section" id="section0">
+
+		<h1 class="heavy">Alex & Erica's <br /><span class="pink">W</span>edding <span class="pink">T</span>ime <span class="pink">F</span>un <span class="pink"></h1>
+		<br />
+
+    <a style="text-decoration: none;" data-menuanchor="4section" href="#4section">
+      <h2 class="heavy"><span class="pink" style="margin-left:-3px;">RSVP</span></h2>
+    </a>
+
+			<div class="intro-scroll-down">
+			  <a data-menuanchor="1section" href="#1section">
+			    <span class="mouse">
+			      <span class="mouse-dot"></span>
+			    </span>
+			  </a>
+			</div>
+	</div>
+
+
+  <div data-anchor="1section" class="section" id="section1">
+      <h1 class="heavy">June <span class="pink">6th</span> 2020</h1>
+      <br /><h2 class="large-blur">
+        <span class="highlight-container"><span class="highlight">
+
+        <a href="{{ BASE_PATH }}/personal">It's about time</a>
+        </span></span>
+      </h2>
+        <div class="intro-scroll-down">
+          <a data-menuanchor="2section" href="#2section">
+            <span class="mouse">
+              <span class="mouse-dot"></span>
+            </span>
+          </a>
+        </div>
+  </div>
+
+	<div data-anchor="2section" class="section" id="section2">
+			<h1 class="heavy">Where it's <span class="pink">happening</span></h1>
+			<br /><h2 class="large-blur">
+				<span class="highlight-container"><span class="highlight">
+					Grand Palladium Riveria Maya
+				</span></span>
+			</h2>
+			<br /><h3 class="large-blur">
+					<a href="{{ BASE_PATH }}/location">Details can be found here!</a>
+				<br />
+			</h3>
+
+				<div class="intro-scroll-down">
+					<a data-menuanchor="3section" href="#3section">
+						<span class="mouse">
+							<span class="mouse-dot"></span>
+						</span>
+					</a>
+				</div>
+	</div>
+
+	<div data-anchor="4section" class="section" id="section4">
+		<h1 class="heavy"><span class="pink">RSVP</span> <span id="trigger-overlay" style="text-decoration: underline; cursor: pointer;" href="#4section" class="" title="Quest">Now</span>
+		</h1><br />
+
+		{% include ads-block.html %}
+
+		<div class="intro-scroll-down">
+			<a data-menuanchor="0section" href="#0section">
+				<span class="mouse">
+					<span class="mouse-dot"></span>
+				</span>
+				<span style="color:white; margin-left:-35px;" data-menuanchor="0section" href="#0section">back to top</span>
+			</a>
+		</div>
+	</div>
+
+
+
+	<!-- FULL SCREEN MODAL SUBMIT open/close -->
+			<div class="overlay overlay-hugeinc">
+				<button type="button" class="overlay-close">Close</button>
+        <nav id="saving_overlay" style="display: none;">
+          <img src="assets/images/bars.gif" />
+        </nav>
+        <nav id="thanks_overlay" style="display: none;">
+          <h2 class="heavy">Thank You!</h2>
+          <h3 class="heavy">Your RSVP has been receieved.</h3>
+
+          <button id="thanks_close" class="cbp-mc-submit" type="button">Close</button>
+        </nav>
+				<nav id="form_overlay">
+					<form id="rsvp_form" novalidate>
+					<ul>
+						<li>
+							<label>First Name</label>
+            </li>
+            <li>
+							<input class="span11" type="text" id="first_name" name="first_name" placeholder="Alex" value="woo">
+            </li>
+            <li>
+              <label>Last Name</label>
+            </li>
+            <li>
+              <input class="span11" type="text" id="last_name" name="last_name" placeholder="Wolfe">
+            </li>
+						<li>
+							<label>Email</label>
+						</li>
+						<li>
+							<input class="span11" type="text" id="email" name="email" placeholder="@doe.com">
+						</li>
+            <li>
+              <label># of Adult Guests</label>
+            </li>
+            <li>
+              <input class="span11" type="input" id="adult-guests" name="adult_guests">
+            </li>
+            <li>
+              <label># of Child Guests</label>
+            </li>
+            <li>
+              <input class="span11" type="input" id="child-guests" name="child_guests">
+            </li>
+            <li>
+              <label>Hotel Prefrence</label>
+            </li>
+            <li>
+              <select class="span11" name="hotel_preference">
+                <option value=""></option>
+                <option value="TRS">TRS</option>
+                <option value="TheOther">TheOther</option>
+                <option value="TheLast">TheLast</option>
+              </select>
+            </li>
+            <li>
+              <label>Comments/Considerations</label>
+            </li>
+            <li>
+              <textarea name="comments">dsfd</textarea>
+            </li>
+						<li>
+							<button id="submit_rsvp" class="cbp-mc-submit" type="button">Submit</button>
+						</li>
+					</ul>
+				</form>
+				</nav>
+
+			</div>
+
+
+</div>
