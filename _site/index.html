@@ -130,7 +130,7 @@ lantoniotrento@gmail.com
 	</div>
 
 	<div data-anchor="4section" class="section" id="section4">
-		<h1 class="heavy"><span class="pink">RSVP</span> <span id="trigger-overlay" style="text-decoration: underline; cursor: pointer;" href="#4section" class="" title="Quest">Now</span>
+		<h1 id="trigger-overlay" class="heavy" style="cursor: pointer !important;"><span class="pink">RSVP</span> <span style="text-decoration: underline;" href="#4section" class="" title="Quest">Now</span>
 		</h1><br />
 
 		<!-- ************************** ADS BLOCK ***************************** -->
@@ -173,30 +173,38 @@ lantoniotrento@gmail.com
         </nav>
 				<nav id="form_overlay">
 					<form id="rsvp_form" novalidate>
+            <h5 class="error" id="error_msg" style="display: none;">Please fix all errors and resubmit.</h5>
 					<ul>
 						<li>
 							<label>First Name</label>
             </li>
             <li>
-							<input class="span11" type="text" id="first_name" name="first_name" placeholder="Alex">
+							<input class="span11" type="text" id="first_name" name="first_name">
             </li>
             <li>
               <label>Last Name</label>
             </li>
             <li>
-              <input class="span11" type="text" id="last_name" name="last_name" placeholder="Wolfe">
+              <input class="span11" type="text" id="last_name" name="last_name">
             </li>
 						<li>
 							<label>Email</label>
 						</li>
 						<li>
-							<input class="span11" type="text" id="email" name="email" placeholder="youremail@host.vom">
+							<input class="span11" type="text" id="email" name="email">
 						</li>
             <li>
               <label>Number of Adult Guests</label>
             </li>
             <li>
-              <input class="span11" type="input" id="adult-guests" name="adult_guests">
+              <select class="span11" type="input" name="adult_guests" id="adult_guests">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </li>
             <li>
               <label>Will you be bringing Children?</label>
@@ -213,7 +221,7 @@ lantoniotrento@gmail.com
                 <label>Number of Children Over 12</label>
               </li>
               <li>
-                <select class="span11" type="input" name="child_guests_over12">
+                <select class="span11" type="input" name="child_guests_over12" id="child_guests_over12">
                   <option value=""></option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -226,7 +234,7 @@ lantoniotrento@gmail.com
                 <label>Number of Children Under 12</label>
               </li>
               <li>
-                <select class="span11" type="input" name="child_guests_under12">
+                <select class="span11" type="input" name="child_guests_under12" id="child_guests_under12">
                   <option value=""></option>
                   <option value="1">1</option>
                   <option value="2">2</option>
