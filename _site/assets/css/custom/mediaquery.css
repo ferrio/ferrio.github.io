@@ -191,6 +191,10 @@
                 animation: ani-mouse 2.5s linear infinite;
             }
 
+    .rotate{
+      transform: rotate(90deg);
+    }
+
     .background--light .intro-scroll-down .mouse {
         border: 2px solid #323232;
     }
