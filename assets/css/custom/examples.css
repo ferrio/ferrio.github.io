@@ -670,11 +670,22 @@ margin: 0;
 	position: relative;
 }
 
-.overlay ul li {
-	display: block;
-	height: calc(100% / 10);
-	min-height: 24px;
+@media only screen and (orientation: landscape) {
+
+  .overlay ul li {
+  	display: block;
+  	height: calc(100% / 10);
+  	min-height: 24px;
+  }
 }
+
+@media only screen and (orientation: portrait) {
+  .overlay ul li {
+  	display: block;
+    height: 28px;
+  }
+}
+
 
 .overlay ul li a {
 	font-weight: 300;
