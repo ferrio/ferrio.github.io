@@ -71,9 +71,7 @@
     if (!$('#adult_guests').val()) { $('#adult_guests').addClass('error'); error=true; }
 
     if ($('#children_field').val() == 'Yes') {
-      if (!$('#child_guests_over12').val()) { $('#child_guests_over12').addClass('error'); error=true; }
-      if (!$('#child_guests_under12').val()) { $('#child_guests_under12').addClass('error'); error=true; }
-
+      if (!$('#child_guests_over12').val() && !$('#child_guests_under12').val()) { $('#child_guests_over12').addClass('error'); $('#child_guests_under12').addClass('error');  error=true; }
     }
 
     if (error) {
