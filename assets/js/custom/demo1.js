@@ -34,6 +34,8 @@
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
 		}
+
+    overlay.focus();
 	}
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
