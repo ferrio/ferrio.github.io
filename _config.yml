@@ -13,13 +13,6 @@ baseurl: ""
 # so be sure to set them if your theme uses them.
 #
 
-#Google Ad Words Data from scripts code (using Google responsive options) and ad client
-data-ad-slot: 2973388149
-data-ad-client: ca-pub-9204963049240271
-google_ad_client: ca-pub-9204963049240271
-
-post_limit: 5
-
 
 title : Alex & Erica's Wedding Time Fun
 tagline: Fun in Paradise
