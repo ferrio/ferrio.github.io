@@ -34,6 +34,8 @@
 		else if( !classie.has( overlay, 'close' ) ) {
 			classie.add( overlay, 'open' );
 		}
+
+    overlay.focus();
 	}
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
@@ -49,6 +51,15 @@
     }
   });
 
+  $('#attending').change(function(o, evt) {
+    if ($(this).val() == 'Yes') {
+      $('#attending_section').show();
+    } else {
+      $('#attending_section').hide();
+    }
+  });
+
+  $('#attending').change(function() { $(this).removeClass('error'); });
   $('#first_name').change(function() { $(this).removeClass('error'); });
   $('#last_name').change(function() { $(this).removeClass('error'); });
   $('#email').change(function() { $(this).removeClass('error'); });
@@ -64,17 +75,21 @@
   $('#submit_rsvp').on('click', function(e) {
     error = false;
 
+    if (!$('#attending').val()) { $('#attending').addClass('error'); error=true; }
+
     if (!$('#first_name').val()) { $('#first_name').addClass('error'); error=true; }
     if (!$('#last_name').val()) { $('#last_name').addClass('error'); error=true; }
-    if (!$('#email').val()) { $('#email').addClass('error'); error=true; }
-    if (!$('#children_field').val()) { $('#children_field').addClass('error'); error=true; }
-    if (!$('#adult_guests').val()) { $('#adult_guests').addClass('error'); error=true; }
+    if ($('#attending').val() == 'Yes') {
+      if (!$('#email').val()) { $('#email').addClass('error'); error=true; }
 
-    if ($('#children_field').val() == 'Yes') {
-      if (!$('#child_guests_over12').val()) { $('#child_guests_over12').addClass('error'); error=true; }
-      if (!$('#child_guests_under12').val()) { $('#child_guests_under12').addClass('error'); error=true; }
+      if (!$('#children_field').val()) { $('#children_field').addClass('error'); error=true; }
+      if (!$('#adult_guests').val()) { $('#adult_guests').addClass('error'); error=true; }
 
+      if ($('#children_field').val() == 'Yes') {
+        if (!$('#child_guests_over12').val() && !$('#child_guests_under12').val()) { $('#child_guests_over12').addClass('error'); $('#child_guests_under12').addClass('error');  error=true; }
+      }
     }
+
 
     if (error) {
       $('#error_msg').show();

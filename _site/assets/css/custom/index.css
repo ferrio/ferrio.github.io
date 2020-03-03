@@ -16,6 +16,12 @@
     background-image: url(/assets/img/big/Wedding2.jpg);
     padding: 6% 0 0 0;
   }
+
+  #section3{
+    background-image: url(/assets/img/big/Wedding5.png);
+    padding: 6% 0 0 0;
+  }
+
   #section4{
     background-image: url(/assets/img/big/Wedding4.jpg);
     padding: 6% 0 0 0;
@@ -43,6 +49,11 @@
 
       #section2{
         background-image: url(/assets/img/tablet/Wedding2.png);
+        padding: 6% 0 0 0;
+      }
+
+      #section3{
+        background-image: url(/assets/img/tablet/Wedding5.png);
         padding: 6% 0 0 0;
       }
 

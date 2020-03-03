@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Alex & Erica's Wedding Time Fun</title>
- <link href="https://fullit.github.io/" rel="self"/>
- <link href="https://fullit.github.io"/>
- <updated>2019-07-29T20:15:18-08:00</updated>
- <id>https://fullit.github.io</id>
+ <link href="https://ferrio.github.io/" rel="self"/>
+ <link href="https://ferrio.github.io"/>
+ <updated>2020-03-02T18:41:53-09:00</updated>
+ <id>https://ferrio.github.io</id>
  <author>
-   <name>fullit</name>
-   <email>lantoniotrento@gmail.com</email>
+   <name>ferrio</name>
+   <email>ferrio@gmail.com</email>
  </author>
 
  
  <entry>
    <title>Make Your Jekyll Website Amazing</title>
-   <link href="https://fullit.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing"/>
+   <link href="https://ferrio.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing"/>
    <updated>2017-03-20T00:00:00-08:00</updated>
-   <id>https://fullit.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</id>
+   <id>https://ferrio.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</id>
    <content type="html">
 &lt;h2 id=&quot;how-you-can-make-an-amazing-website&quot;&gt;How you can make an Amazing Website?&lt;/h2&gt;
 
@@ -29,9 +29,9 @@
  
  <entry>
    <title>Syntax Highlight Example</title>
-   <link href="https://fullit.github.io/lessons/2017/02/15/syntax-highlight-example"/>
+   <link href="https://ferrio.github.io/lessons/2017/02/15/syntax-highlight-example"/>
    <updated>2017-02-15T00:00:00-09:00</updated>
-   <id>https://fullit.github.io/lessons/2017/02/15/syntax-highlight-example</id>
+   <id>https://ferrio.github.io/lessons/2017/02/15/syntax-highlight-example</id>
    <content type="html">
 &lt;p&gt;An example post about code insertion into posts.&lt;/p&gt;
 
@@ -175,9 +175,9 @@
  
  <entry>
    <title>Testing Locally</title>
-   <link href="https://fullit.github.io/lessons/2017/01/17/testing-locally"/>
+   <link href="https://ferrio.github.io/lessons/2017/01/17/testing-locally"/>
    <updated>2017-01-17T00:00:00-09:00</updated>
-   <id>https://fullit.github.io/lessons/2017/01/17/testing-locally</id>
+   <id>https://ferrio.github.io/lessons/2017/01/17/testing-locally</id>
    <content type="html">
 &lt;p&gt;In this tutorial I will teach you &lt;em&gt;how to test your Jekyll Bootstrap3&lt;/em&gt; site locally.&lt;/p&gt;
 

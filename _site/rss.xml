@@ -2,11 +2,11 @@
 <rss version="2.0">
 <channel>
         <title>Alex & Erica's Wedding Time Fun</title>
-        <description>Alex & Erica's Wedding Time Fun - fullit</description>
-        <link>https://fullit.github.io</link>
-        <link>https://fullit.github.io</link>
-        <lastBuildDate>2019-07-29T20:15:18-08:00</lastBuildDate>
-        <pubDate>2019-07-29T20:15:18-08:00</pubDate>
+        <description>Alex & Erica's Wedding Time Fun - ferrio</description>
+        <link>https://ferrio.github.io</link>
+        <link>https://ferrio.github.io</link>
+        <lastBuildDate>2020-03-02T18:41:53-09:00</lastBuildDate>
+        <pubDate>2020-03-02T18:41:53-09:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,8 +20,8 @@
 &lt;p&gt;Use this template to generate a great jekyll website via a full of slide system make by fullpage.js and build quick your pages using the last version of Bootstrap 4.&lt;/p&gt;
 
 </description>
-                <link>https://fullit.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</link>
-                <guid>https://fullit.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</guid>
+                <link>https://ferrio.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</link>
+                <guid>https://ferrio.github.io/lessons/2017/03/20/make-your-jekyll-website-amazing</guid>
                 <pubDate>2017-03-20T00:00:00-08:00</pubDate>
         </item>
 
@@ -166,8 +166,8 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/sentenza/sentenza.github.io/issues/1&quot;&gt;Here&lt;/a&gt; you can find more detailed information.&lt;/p&gt;
 </description>
-                <link>https://fullit.github.io/lessons/2017/02/15/syntax-highlight-example</link>
-                <guid>https://fullit.github.io/lessons/2017/02/15/syntax-highlight-example</guid>
+                <link>https://ferrio.github.io/lessons/2017/02/15/syntax-highlight-example</link>
+                <guid>https://ferrio.github.io/lessons/2017/02/15/syntax-highlight-example</guid>
                 <pubDate>2017-02-15T00:00:00-09:00</pubDate>
         </item>
 
@@ -316,8 +316,8 @@ preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/cod
 
 &lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>https://fullit.github.io/lessons/2017/01/17/testing-locally</link>
-                <guid>https://fullit.github.io/lessons/2017/01/17/testing-locally</guid>
+                <link>https://ferrio.github.io/lessons/2017/01/17/testing-locally</link>
+                <guid>https://ferrio.github.io/lessons/2017/01/17/testing-locally</guid>
                 <pubDate>2017-01-17T00:00:00-09:00</pubDate>
         </item>
 
