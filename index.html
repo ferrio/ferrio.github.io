@@ -130,7 +130,16 @@ canonical: https://fullit.github.io
       <!-- FULL SCREEN MODAL SUBMIT open/close -->
     			<div class="overlay overlay-hugeinc" style="position: fixed; height: 100%; width: 100%">
     				<button type="button" class="overlay-close">Close</button>
-    
+            <nav id="saving_overlay" style="display: none;">
+              <img src="assets/images/bars.gif" />
+            </nav>
+            <nav id="thanks_overlay" style="display: none;">
+              <h2 class="heavy">Thank You!</h2>
+              <h3 class="heavy">Your RSVP has been receieved.</h3>
+
+              <button id="thanks_close" class="cbp-mc-submit" type="button">Close</button>
+            </nav>
+    				<nav id="form_overlay">
               <div style="z-index: 30001; overflow-y: scroll; max-height: calc(100vh - 100px); -webkit-overflow-scrolling: touch;">
     					<form id="rsvp_form" novalidate>
                 <h5 class="error" id="error_msg" style="display: none;">Please fix all errors and resubmit.</h5>
@@ -168,6 +177,7 @@ canonical: https://fullit.github.io
                     <option value="Yes">Yes</option>
                   </select>
                 </li>
+                <div style="display: none;" id="attending_section">
       						<li>
       							<label>Email</label>
       						</li>
@@ -191,17 +201,18 @@ canonical: https://fullit.github.io
                     <label>Will you be bringing Children?</label>
                   </li>
                   <li>
-                    <select class="span11" type="input" name="children" id="children_field">
+                    <select class="span11" name="children" id="children_field">
                       <option value=""></option>
                       <option value="No">No</option>
                       <option value="Yes">Yes</option>
                     </select>
                   </li>
+                  <div style="display: none;" id="children_section">
                     <li>
                       <label>Number of Children Over 12</label>
                     </li>
                     <li>
-                      <select class="span11" type="input" name="child_guests_over12" id="child_guests_over12">
+                      <select class="span11" name="child_guests_over12" id="child_guests_over12">
                         <option value=""></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -214,7 +225,7 @@ canonical: https://fullit.github.io
                       <label>Number of Children Under 12</label>
                     </li>
                     <li>
-                      <select class="span11" type="input" name="child_guests_under12" id="child_guests_under12">
+                      <select class="span11" name="child_guests_under12" id="child_guests_under12">
                         <option value=""></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -223,6 +234,8 @@ canonical: https://fullit.github.io
                         <option value="5">5</option>
                       </select>
                     </li>
+                  </div>
+                </div>
                 <li>
                   <label>Comments/Considerations</label>
                 </li>
@@ -234,6 +247,8 @@ canonical: https://fullit.github.io
     						</li>
     					</ul>
     				</form>
+          </div>
+				</nav>
         </div>
 
 </div>
