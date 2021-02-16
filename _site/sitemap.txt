@@ -5,6 +5,7 @@ https://ferrio.github.io/archive
 https://ferrio.github.io/atom.xml
 https://ferrio.github.io/blog
 https://ferrio.github.io/categories
+https://ferrio.github.io/form
 https://ferrio.github.io/
 https://ferrio.github.io/location
 https://ferrio.github.io/pages
