@@ -1,3 +1,7 @@
+body {
+-webkit-overflow-scrolling: touch;
+}
+
 @media only screen and (orientation: landscape) {
 
   /* Defining each sectino background and styles
