@@ -26,6 +26,11 @@ h1,h2,h3,h4,h5,h6 {
     color:#fff;
 }
 
+a, a:hover, a:visited
+{
+    text-decoration: none;
+}
+
 .highlight-container a {
   color: black !important;
   text-decoration: underline !important;
@@ -369,7 +374,8 @@ p{
 #section1,
 #section2,
 #section3,
-#section4{
+#section4,
+#section5{
   background-size: cover;
   background-attachment: fixed;
 }

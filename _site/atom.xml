@@ -4,7 +4,7 @@
  <title>Alex & Erica's Wedding Time Fun</title>
  <link href="https://ferrio.github.io/" rel="self"/>
  <link href="https://ferrio.github.io"/>
- <updated>2020-03-02T18:41:53-09:00</updated>
+ <updated>2021-02-16T10:39:30-09:00</updated>
  <id>https://ferrio.github.io</id>
  <author>
    <name>ferrio</name>
@@ -214,7 +214,7 @@ folks. Sorry!)&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;    gem install github-pages
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will install the &lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt; gem and all dependencies
+&lt;p&gt;This will install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github-pages&lt;/code&gt; gem and all dependencies
 (including &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Later, to update the gem, type:&lt;/p&gt;
@@ -228,18 +228,18 @@ type&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;    jekyll build
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This will create (or modify) a &lt;code class=&quot;highlighter-rouge&quot;&gt;_site/&lt;/code&gt; directory, containing
-everything from &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/&lt;/code&gt;, and then the &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt; and all
-&lt;code class=&quot;highlighter-rouge&quot;&gt;pages/*.md&lt;/code&gt; files, converted to html. (So there’ll be
-&lt;code class=&quot;highlighter-rouge&quot;&gt;_site/index.html&lt;/code&gt; and the various &lt;code class=&quot;highlighter-rouge&quot;&gt;_site/pages/*.html&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;This will create (or modify) a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site/&lt;/code&gt; directory, containing
+everything from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets/&lt;/code&gt;, and then the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.md&lt;/code&gt; and all
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pages/*.md&lt;/code&gt; files, converted to html. (So there’ll be
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site/index.html&lt;/code&gt; and the various &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site/pages/*.html&lt;/code&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Type the following in order to “serve” the site.
-This will first run &lt;code class=&quot;highlighter-rouge&quot;&gt;build&lt;/code&gt;, and so it does &lt;em&gt;not&lt;/em&gt; need to be
-preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
+This will first run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build&lt;/code&gt;, and so it does &lt;em&gt;not&lt;/em&gt; need to be
+preceded by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;    jekyll serve
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To make jekyll automatically re-build your changes you can also add the &lt;code class=&quot;highlighter-rouge&quot;&gt;--watch&lt;/code&gt; option:&lt;/p&gt;
+&lt;p&gt;To make jekyll automatically re-build your changes you can also add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--watch&lt;/code&gt; option:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;    jekyll serve --watch
     
 &lt;/code&gt;&lt;/pre&gt;

@@ -5,7 +5,7 @@ tagline: Fun in Paradise
 img : 1.jpg
 img-mobile : 1-mobile.jpg
 css: index.css
-js: test.js
+js: index.js
 keywords: fullpage, html, css, landing page, jekyll, ruby, web marketing, advertising
 canonical: https://fullit.github.io
 ---
@@ -33,15 +33,18 @@ canonical: https://fullit.github.io
 
 
   <div data-anchor="1section" class="section" id="section1">
-      <h1 class="heavy">June <span class="pink">6th</span> 2020</h1>
-      <br /><h2 class="large-blur">
+      <h1 class="heavy">March <span class="pink">5th</span> 2022</h1>
+      <h2 class="large-blur">
+        <span class="heavy" id="countdown_time"></span>
+      <br />
+      <br />
         <span class="highlight-container"><span class="highlight">
+        <a href="{{ BASE_PATH }}/personal">3rd time is the charm!</a>
 
-        <a href="{{ BASE_PATH }}/personal">It's about time</a>
         </span></span>
       </h2>
         <div class="intro-scroll-down">
-          <a data-menuanchor="2section" href="#2section">
+          <a data-menuanchor="6section" href="#6section">
             <span class="mouse">
               <span class="mouse-dot"></span>
             </span>
@@ -79,7 +82,7 @@ canonical: https://fullit.github.io
       <h3 class="large-blur">
       <span class="highlight-container">
       <span class="highlight">
-          <a href="https://www.honeyfund.com/wedding/AlexandEricaAreGettingMarried">Find it here!</a>
+          <a href="https://www.honeyfund.com/wedding/AlexandEricaAreGettingMarried" target="_blank">Find it here!</a>
         <br />
       </span>
       </span>
@@ -98,22 +101,32 @@ canonical: https://fullit.github.io
 		<h1 id="trigger-overlay" class="heavy" style="cursor: pointer !important;"><span class="pink">RSVP</span> <span style="text-decoration: underline;" href="#4section" class="" title="Quest">Here</span>
 		</h1><br />
     <h3 class="heavy">
-        Please RSVP by January 1st 2020
+        Please RSVP by November 1st 2022
     </h3>
 
 		<div class="intro-scroll-down">
-			<a data-menuanchor="0section" href="#0section">
+			<a data-menuanchor="5section" href="#5section">
 				<span class="mouse">
 					<span class="mouse-dot"></span>
 				</span>
-				<span style="color:white; margin-left:-35px;" data-menuanchor="0section" href="#0section">back to top</span>
 			</a>
 		</div>
 	</div>
 
+  <div data-anchor="5section" class="section" id="section5">
+    <h1 id="trigger-overlay" class="heavy" style="cursor: pointer !important;">See ya at the <span class="pink">Beach!</span>
+    </h1><br />
 
+    <div class="intro-scroll-down">
+      <a data-menuanchor="0section" href="#0section">
+        <span class="mouse">
+          <span class="mouse-dot"></span>
+        </span>
+        <div style="margin-top: 5px; color:white; margin-left:-25px; text-decoration: none !important;" data-menuanchor="0section" href="#0section">Back to Top</div>
+      </a>
+    </div>
+  </div>
 
-			</div>
       <!-- FULL SCREEN MODAL SUBMIT open/close -->
     			<div class="overlay overlay-hugeinc" style="overflow-y: initial !important;">
     				<button type="button" class="overlay-close">Close</button>
@@ -141,6 +154,7 @@ canonical: https://fullit.github.io
                     <option value="Yes">Yes</option>
                   </select>
                 </li>
+
     						<li>
     							<label>First Name</label>
                 </li>
@@ -152,6 +166,16 @@ canonical: https://fullit.github.io
                 </li>
                 <li>
                   <input class="span11" type="text" id="last_name" name="last_name">
+                </li>
+                <li>
+                  <label>Prevously RSVP'ed?</label>
+                </li>
+                <li>
+                  <select class="span11" type="input" name="previous_guest" id="previous_guest">
+                    <option value=""></option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
                 </li>
                 <div style="display: none;" id="attending_section">
       						<li>

@@ -1,0 +1,139 @@
+I"‘
+<p>An example post about code insertion into posts.</p>
+
+<!--more-->
+<h2 id="testing-code-snippet-highlight">Testing code snippet highlight</h2>
+
+<p>The following example shows how to highlight a piece of code throughout the use of Javascript:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">/*jshint browser: true, strict: true, undef: true */
+    /*global define: false */
+
+    ( function( window ) {
+
+    &#39;use strict&#39;;
+
+    // class helper functions from bonzo https://github.com/ded/bonzo
+
+    function classReg( className ) {
+      return new RegExp(&quot;(^|\\s+)&quot; + className + &quot;(\\s+|$)&quot;);
+    }
+
+    // classList support for class management
+    // altho to be fair, the api sucks because it won&#39;t accept multiple classes at once
+    var hasClass, addClass, removeClass;
+
+    if ( &#39;classList&#39; in document.documentElement ) {
+      hasClass = function( elem, c ) {
+        return elem.classList.contains( c );
+      };
+      addClass = function( elem, c ) {
+        elem.classList.add( c );
+      };
+      removeClass = function( elem, c ) {
+        elem.classList.remove( c );
+      };
+    }
+    else {
+      hasClass = function( elem, c ) {
+        return classReg( c ).test( elem.className );
+      };
+      addClass = function( elem, c ) {
+        if ( !hasClass( elem, c ) ) {
+          elem.className = elem.className + &#39; &#39; + c;
+        }
+      };
+      removeClass = function( elem, c ) {
+        elem.className = elem.className.replace( classReg( c ), &#39; &#39; );
+      };
+    }
+
+    function toggleClass( elem, c ) {
+      var fn = hasClass( elem, c ) ? removeClass : addClass;
+      fn( elem, c );
+    }
+
+    var classie = {
+      // full names
+      hasClass: hasClass,
+      addClass: addClass,
+      removeClass: removeClass,
+      toggleClass: toggleClass,
+      // short names
+      has: hasClass,
+      add: addClass,
+      remove: removeClass,
+      toggle: toggleClass
+    };
+
+    // transport
+    if ( typeof define === &#39;function&#39; &amp;&amp; define.amd ) {
+      // AMD
+      define( classie );
+    } else {
+      // browser global
+      window.classie = classie;
+    }
+
+    })( window );</code></pre></figure>
+
+<h2 id="code-highlighting-with-rounge-and-prism">Code highlighting with rounge and Prism</h2>
+
+<p>Another snippet rendered with the CSS code syntax:</p>
+
+<pre><code class="language-CSS">    @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Gentium+Book+Basic');
+    /* Reset CSS
+     * --------------------------------------- */
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+    form,fieldset,input,textarea,p,blockquote,th,td {
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration:none;
+    }
+    table {
+        border-spacing: 0;
+    }
+    fieldset,img {
+        border: 0;
+    }
+    address,caption,cite,code,dfn,em,strong,th,var {
+        font-weight: normal;
+        font-style: normal;
+    }
+</code></pre>
+<h2 id="using-snippet-rendered-with-the-html-code-syntax">Using snippet rendered with the HTML code syntax</h2>
+
+<pre><code class="language-HTML">
+&lt;div id="fullpage"&gt;
+    &lt;div data-anchor="0section" class="section" id="section0"&gt;
+
+        &lt;h1 class="heavy"&gt;Ready to follow &lt;br /&gt;your &lt;span class="pink"&gt;dreams?&lt;/span&gt;&lt;/h1&gt;
+        &lt;br /&gt;&lt;h2 class="large-blur"&gt;
+            &lt;span class="highlight-container"&gt;&lt;span class="highlight"&gt;
+                Put your dreams on first and follow that!
+            &lt;/span&gt;&lt;/span&gt;
+
+            &lt;br /&gt;
+
+                            
+
+        &lt;/h2&gt;
+            &lt;div class="intro-scroll-down"&gt;
+              &lt;a data-menuanchor="1section" href="#1section"&gt;
+                &lt;span class="mouse"&gt;
+                  &lt;span class="mouse-dot"&gt;&lt;/span&gt;
+                &lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+
+
+
+    &lt;/div&gt;
+</code></pre>
+
+<p><strong>Check the markdown of this example in order to fully comprehend the correct syntax.</strong></p>
+
+<p><a href="https://github.com/sentenza/sentenza.github.io/issues/1">Here</a> you can find more detailed information.</p>
+:ET

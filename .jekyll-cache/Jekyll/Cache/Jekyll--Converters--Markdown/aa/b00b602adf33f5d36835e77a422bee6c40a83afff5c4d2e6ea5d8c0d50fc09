@@ -1,0 +1,15 @@
+I"W
+<p>In this tutorial I will teach you <em>how to test your Jekyll Bootstrap3</em> site locally.</p>
+
+<p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
+dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.</p>
+
+<p>To test your site locally, you’ll need</p>
+
+<ol>
+  <li><a href="https://www.ruby-lang.org/en/">ruby</a></li>
+  <li><a href="https://http://jekyllrb.com/">Jekyll</a></li>
+  <li><a href="https://github.com/github/pages-gem">github-pages</a> gem</li>
+</ol>
+
+:ET
