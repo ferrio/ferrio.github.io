@@ -1,0 +1,135 @@
+---
+layout: index
+group: navigation
+css: form.css
+js: form.js
+img : Wedding4.jpg
+---
+{% include JB/setup %}
+
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container-fluid nopadding">
+  <div id="fullpage">
+    <nav id="saving_overlay" style="display: none;">
+      <img src="assets/images/bars.gif" />
+    </nav>
+    <nav id="thanks_overlay" style="display: none;">
+      <h2 class="heavy">Thank You!</h2>
+      <h3 class="heavy">Your RSVP has been receieved.</h3>
+
+      <button id="thanks_close" class="cbp-mc-submit" type="button">Close</button>
+    </nav>
+    <div class="section" id="section0">
+      <div  id="new-landing" style="background-size: cover;" class="slide">
+            <div class="inner_box">
+              <form id="rsvp_form" novalidate>
+                <h5 class="error" id="error_msg" style="display: none;">Please fix all errors and resubmit.</h5>
+              <ul>
+                <li>
+                  <label>Will you attending?</label>
+                </li>
+                <li>
+                  <select class="span11" name="attending" id="attending">
+                    <option value=""></option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </li>
+
+                <li>
+                  <label>First Name</label>
+                </li>
+                <li>
+                  <input class="span11" type="text" id="first_name" name="first_name">
+                </li>
+                <li>
+                  <label>Last Name</label>
+                </li>
+                <li>
+                  <input class="span11" type="text" id="last_name" name="last_name">
+                </li>
+                <li>
+                  <label>Prevously RSVP'ed?</label>
+                </li>
+                <li>
+                  <select class="span11" name="previous_guest" id="previous_guest">
+                    <option value=""></option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </li>
+                <div style="display: none;" id="attending_section">
+                  <li>
+                    <label>Email</label>
+                  </li>
+                  <li>
+                    <input class="span11" type="text" id="email" name="email">
+                  </li>
+                  <li>
+                    <label>Number of Adult Guests</label>
+                  </li>
+                  <li>
+                    <select class="span11" name="adult_guests" id="adult_guests">
+                      <option value=""></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Will you be bringing Children?</label>
+                  </li>
+                  <li>
+                    <select class="span11" name="children" id="children_field">
+                      <option value=""></option>
+                      <option value="No">No</option>
+                      <option value="Yes">Yes</option>
+                    </select>
+                  </li>
+                  <div style="display: none;" id="children_section">
+                    <li>
+                      <label>Number of Children Over 12</label>
+                    </li>
+                    <li>
+                      <select class="span11" name="child_guests_over12" id="child_guests_over12">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label>Number of Children Under 12</label>
+                    </li>
+                    <li>
+                      <select class="span11" name="child_guests_under12" id="child_guests_under12">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </li>
+                  </div>
+                </div>
+                <li>
+                  <label>Comments/Considerations</label>
+                </li>
+                <li>
+                  <textarea name="comments" placeholder="I like fun"></textarea>
+                </li>
+                <li style="margin-top: 20px;">
+                  <button id="submit_rsvp" class="cbp-mc-submit" type="button">Submit</button>
+                </li>
+              </ul>
+            </form>
+            </div>
+      </div>
+    </div>
+   </div>
+</div>
