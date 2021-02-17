@@ -1,5 +1,46 @@
 (function() {
 
+  var triggerBttn = document.getElementById( 'trigger-overlay' ),
+		overlay = document.querySelector( 'div.overlay' ),
+    closeBttn = overlay.querySelector( 'button.overlay-close' );
+    thanksBttn = overlay.querySelector( '#thanks_close' );
+		transEndEventNames = {
+			'WebkitTransition': 'webkitTransitionEnd',
+			'MozTransition': 'transitionend',
+			'OTransition': 'oTransitionEnd',
+			'msTransition': 'MSTransitionEnd',
+			'transition': 'transitionend'
+		},
+		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+		support = { transitions : Modernizr.csstransitions };
+
+	function toggleOverlay() {
+		if( classie.has( overlay, 'open' ) ) {
+			classie.remove( overlay, 'open' );
+			classie.add( overlay, 'close' );
+			var onEndTransitionFn = function( ev ) {
+				if( support.transitions ) {
+					if( ev.propertyName !== 'visibility' ) return;
+					this.removeEventListener( transEndEventName, onEndTransitionFn );
+				}
+				classie.remove( overlay, 'close' );
+			};
+			if( support.transitions ) {
+				overlay.addEventListener( transEndEventName, onEndTransitionFn );
+			}
+			else {
+				onEndTransitionFn();
+			}
+		}
+		else if( !classie.has( overlay, 'close' ) ) {
+			classie.add( overlay, 'open' );
+		}
+
+    overlay.focus();
+	}
+
+  thanksBttn.addEventListener( 'click', toggleOverlay );
+
 $('#children_field').change(function(o, evt) {
   if ($(this).val() == 'Yes') {
     $('#children_section').show();
@@ -51,7 +92,7 @@ $('#submit_rsvp').on('click', function(e) {
   if (error) {
     $('#error_msg').show();
   } else {
-    $('#form_overlay').hide();
+    toggleOverlay();
     $('#saving_overlay').show();
     e.preventDefault();
     var jqxhr = $.ajax({
@@ -59,7 +100,7 @@ $('#submit_rsvp').on('click', function(e) {
       method: "GET",
       dataType: "json",
       data: form.serialize()+'&date_submitted='+Date().toLocaleString("en-US", {timeZone: "America/Anchorage"})
-    }).success(function() { $('#error_msg').hide(); $('#thanks_overlay').show();  $('#saving_overlay').hide(); }
+    }).success(function() { $('#error_msg').hide();  $('#saving_overlay').hide();  $('#thanks_overlay').show(); }
     );
   }
 });

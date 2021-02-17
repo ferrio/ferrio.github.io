@@ -38,8 +38,6 @@
     overlay.focus();
 	}
 
-	triggerBttn.addEventListener( 'click', toggleOverlay );
-	closeBttn.addEventListener( 'click', toggleOverlay );
   thanksBttn.addEventListener( 'click', toggleOverlay );
 
 
@@ -57,6 +55,10 @@
     } else {
       $('#attending_section').hide();
     }
+  });
+
+  $('#thanks_close').click(function() {
+    window.location = '../#5section'
   });
 
   $('#attending').change(function() { $(this).removeClass('error'); });
@@ -94,7 +96,7 @@
     if (error) {
       $('#error_msg').show();
     } else {
-      $('#form_overlay').hide();
+      toggleOverlay();
       $('#saving_overlay').show();
       e.preventDefault();
       var jqxhr = $.ajax({

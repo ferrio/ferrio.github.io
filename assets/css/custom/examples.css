@@ -708,17 +708,13 @@ margin: 0;
 
 /* Effects */
 .overlay-hugeinc {
-	opacity: 0;
+  background-color:rgba(52,152,219,0.5);
 	visibility: hidden;
-	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-	transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
 .overlay-hugeinc.open {
-	opacity: 0.9;
+  background-color:rgba(52,152,219,0.5);
 	visibility: visible;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
 }
 
 .overlay-hugeinc nav {
