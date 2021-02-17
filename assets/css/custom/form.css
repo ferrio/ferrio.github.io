@@ -13,17 +13,12 @@
 
 @media only screen and (orientation: portrait) {
 
-
-
       /* Defining each section background and styles on portrait orientation
       * --------------------------------------- */
       #new-landing{
         background-image: url(/assets/img/big/Wedding4.jpg);
         padding: 0 0 0 0;
       }
-
-
-
 
 }
 
